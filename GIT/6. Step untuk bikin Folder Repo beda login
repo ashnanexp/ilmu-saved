@@ -1,0 +1,17 @@
+1. pastikan credential true
+   cek: git config --global --get credential.useHttpPath
+   cmd: git config --global credential.useHttpPath true
+2. Ambil/copy alamat repo dari web
+3. pastikan target repo benar
+   cek: git remote -v
+   cmd: git remote add origin https://github.com/namausergit/repotujuan.git
+4. pastikan ada perubahan di folder dengan edit atau menambahkan file
+   cek: git status
+   cmd: git add .
+        git commit -m "info commit"
+        git push
+5. akan terbuka layar login pilih sign by code
+6. dibawah code ada link , copas linknya ke browser atau klik langsung nanti diarahin
+7. pastikan di browser pilih user GIT yg ining dilogin. selesai data berhasil dipush dengan login pilihan
+8. tarik data terbaru jika ada
+   cmd: git pull
