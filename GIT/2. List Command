@@ -1,13 +1,17 @@
 BASIC / INFORMASI
----------------------------------------------------
-| Fungsi                    | Command             |
-| ------------------------- | ------------------- |
-| Cek versi Git             | `git --version`     |
-| Cek status project        | `git status`        |
-| Lihat riwayat commit      | `git log`           |
-| Riwayat singkat           | `git log --oneline` |
-| Lihat perbedaan perubahan | `git diff`          |
----------------------------------------------------
+----------------------------------------------------------------
+| Fungsi                    | Command                          |
+| ------------------------- | -------------------------------- |
+| Cek versi Git             | `git --version`                  |
+| Cek status project        | `git status`                     |
+| Lihat riwayat commit      | `git log`                        |
+| Riwayat singkat           | `git log --oneline`              |
+| Lihat perbedaan perubahan | `git diff`                       |
+| cek arah repo remote      | `git remote -v`                  |
+| cek email nama dan auth   | `git config --global --list`     |
+| cek semua config          | `git config --list`              |
+| keluar command            | `q`                              |
+----------------------------------------------------------------
 SETUP AWAL / CONFIG
 ------------------------------------------------------------------------------
 | Fungsi                | Command                                            |
@@ -17,18 +21,20 @@ SETUP AWAL / CONFIG
 | Set email user        | `git config --global user.email "email@gmail.com"` |
 | Lihat semua config    | `git config --list`                                |
 | Cek credential helper | `git config --global credential.helper`            |
+| Cek credential status | `git config --global --get credential.useHttpPath` |
 ------------------------------------------------------------------------------
 STAGING & COMMIT
------------------------------------------------------
-| Fungsi                | Command                   |
-| --------------------- | ------------------------- |
-| Tambah semua file     | `git add .`               |
-| Tambah file tertentu  | `git add namafile`        |
-| Commit perubahan      | `git commit -m "pesan"`   |
-| Batalkan staging file | `git reset namafile`      |
-| Undo commit terakhir  | `git reset --soft HEAD~1` |
-| Reset total perubahan | `git reset --hard HEAD`   |
------------------------------------------------------
+------------------------------------------------------------------------------
+| Fungsi                | Command                                             |
+| --------------------- | ----------------------------------------------------|
+| Tambah semua file     | `git add .`                                         |
+| Tambah file tertentu  | `git add namafile`                                  |
+| Commit perubahan      | `git commit -m "pesan"`                             |
+| Batalkan staging file | `git reset namafile`                                |
+| Undo commit terakhir  | `git reset --soft HEAD~1`                           |
+| Reset total perubahan | `git reset --hard HEAD`                             |
+| ubah cara authen      | `git config --global credential.useHttpPath true`   |
+------------------------------------------------------------------------------
 REMOTE / GITHUB
 -------------------------------------------------------
 | Fungsi            | Command                         |
