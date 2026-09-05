@@ -13,7 +13,8 @@
    - git commit -m "first upload"
 6. Sambungkan ke repository GitHub
    - git remote add origin https://github.com/USERNAME/NAMA_REPO.git
-7. Upload ke GitHub
+7. setup branch local ke branch git di web lalu push
+   - git branch --set-upstream-to=origin/main master
    - git push -u origin master / git push -u origin main
 8. Login GitHub supaya bisa push ke folder tujuan
 9. Setelah itu kalau update file
